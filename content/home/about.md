@@ -34,7 +34,7 @@ weight = 5
 
 # Biography
 A pure terminal geek, with interests in Parallel & Distriuted Systems.
-I am currently working with <a href="https//site.google.com/site/sambuddhochakravarty/">Dr. Sambhudo</a>.
+I am currently working with <a href="//sites.google.com/site/sambuddhochakravarty/">Dr. Sambhudo</a>.
 I have had experiences in working with the Linux Kernel, LLVM, Docker and gcc. My current favorite language is <b> go</b> 
 apart from <b> C </b>. I am a die hard <b> vim </b> user, but occasionally break out <b> emacs </b> if its too complex for vi.
 These days I am fascinated by the design of the <b> go compiler </b>, which keeps me awake at non-normal hours with a constant supply
