@@ -36,4 +36,3 @@ header_links = [
 	{url = "$BASE_URL/about", name = "About"},
 	{url = "$BASE_URL/atom.xml", name = "RSS"},
 ]
-
