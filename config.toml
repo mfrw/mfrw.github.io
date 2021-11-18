@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://mfrw.github.io"
+base_url = "http://mfrw.github.io"
 title = "Imposter!"
 description = "Notes from someone pretending!"
 
