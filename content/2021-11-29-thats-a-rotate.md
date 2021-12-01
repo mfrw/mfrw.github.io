@@ -24,8 +24,8 @@ If you want to know the back story of the comment where he mentions `nobody know
 
 
 <figure class="video_container" align=center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IzNtM038JuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<figcaption>Back story of 'nobody knew what a rotate does'</figcaption>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IzNtM038JuI?start=1715" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figcaption>Back story of 'nobody knew what a rotate does' [28:35]</figcaption>
 </figure>
 
 And for me, my `#thatsarotate` moment in computer science was this talk.
