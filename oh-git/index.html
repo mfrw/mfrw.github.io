@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Oh Git! &middot; Imposter!</title>
+    <meta name="description" content="A few quality of life imporovements for working with commandline git" />
+    <link rel="shortcut icon"  href="http://mfrw.github.io/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml" title="RSS" href="http://mfrw.github.io/atom.xml">
+
+    <style>html,body{background:#fffaf7;color:#2d2d2d;font:16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"}a,a:visited{color:darkred;text-decoration:none}a:hover{text-decoration:underline}main{margin:auto;max-width:60rem;padding:0.8rem}pre{background:white;overflow:scroll;padding:1rem}td{border:1px solid #2d2d2d;padding:10px}img{height:auto;max-width:100%}.homepage-list{list-style:none;padding:1rem 0}.homepage-list li{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-between;margin-bottom:10px}@media (max-width: 50rem){.homepage-list li a{width:100%}}
+</style>
+
+    <meta property="og:site_name" content="Imposter!">
+      
+      <meta property="og:title" content="Oh Git!">
+      <meta property="og:description" content="A few quality of life imporovements for working with commandline git">
+      <meta property="og:url" content="http://mfrw.github.io/oh-git/">
+      <meta property="og:image" content="">
+
+      <meta property="og:type" content="article" />
+        <meta property="article:published_time" content="2021-11-19T00:00:00+00:00" />
+
+      <link rel="prev" href="http://mfrw.github.io/epoch/" />
+      <link rel="next" href="http://mfrw.github.io/rpm/" />
+    
+
+  </head>
+  
+
+  <body>
+    <main id="main" role="main">
+
+      
+      <header role="banner">
+        <h2 style="margin-top:0;">
+          <a href="http://mfrw.github.io" title="Home">Imposter!</a>
+          <br /><small>Notes from someone pretending!</small>
+        </h2>
+      </header>
+      <hr />
+      <h4>
+      
+        <nav style="margin-bottom:1rem;" role="navigation">
+          
+            <a href="http://mfrw.github.io/">Posts</a>
+            
+              <span>&middot;</span>
+            
+          
+            <a href="http://mfrw.github.io/talks">Talks</a>
+            
+              <span>&middot;</span>
+            
+          
+            <a href="http://mfrw.github.io/projects">Projects</a>
+            
+              <span>&middot;</span>
+            
+          
+            <a href="http://mfrw.github.io/about">About</a>
+            
+              <span>&middot;</span>
+            
+          
+            <a href="http://mfrw.github.io/atom.xml">RSS</a>
+            
+          
+        </nav>
+        
+      </h4>
+      <hr />
+
+
+      
+
+      
+<article>
+  <h1>
+	  Oh Git!
+
+  </h1>
+
+  
+	  <p style="font-size:95%;">
+		  <i>A few quality of life imporovements for working with commandline git</i>
+	  </p>
+  
+
+  
+  <strong>
+	  <i>
+		  <p style="font-size:80%;">Posted on <time datetime="2021-11-19T00:00:00+00:00">November 19, 2021</time></p>
+	  </i>
+  </strong>
+  
+  <hr style="border-top: groove 3px;" />
+
+
+  <p>Git is a powertool which most folks in the software industry use.</p>
+<figure class="picture_cont" align=center>
+<img width=33% source src="https://imgs.xkcd.com/comics/git.png">
+</img>
+<figcaption>My view of Git</figcaption>
+</figure>
+<p>It's the kind of tool, where the users can be classified into:</p>
+<ul>
+<li><strong>Basic</strong>: are comfortable with <code>add/commit/push/pull</code>.</li>
+<li><strong>Intermediate</strong>: are comfortable with <code>rebases/cherry-picking/worktree/filter-branch</code> etc etc.</li>
+<li><strong>Advanced</strong>: are okay with doing an <a href="https://lore.kernel.org/all/CA+55aFxX3odNLBt1L6iAPGybekioqaW3SREmXywd_jnz_tDBeQ@mail.gmail.com/">octopus merge</a> with more than 8 source branches.</li>
+</ul>
+<p>For me personally, I belong to the bucket which I havent defined (between Basic &amp; Intermediate).  This blog post is a <code>quality of life improvement</code> to help with <code>git</code> and help you improving your workflow.</p>
+<p>Let's start with the absolute basics of quality of life imporovements</p>
+<h2 id="absolute-basics">Absolute Basics:</h2>
+<p>A few quality of life improvements before we move ahead on our journey to improve our git workflow.</p>
+<ul>
+<li>Configure Prompt</li>
+<li>Configure Aliases</li>
+<li>Miscilleanous</li>
+</ul>
+<h3 id="configuring-the-prompt">Configuring the Prompt:</h3>
+<p>Out of the box the command line git interface is bare. To get a little more context a good idea is to configure the <a href="https://wiki.archlinux.org/title/Bash/Prompt_customization#Prompts">PS1</a> of your terminal.</p>
+<p>A git repo on the terminal without a custom PS1:</p>
+<pre data-lang="bash" style="background-color:#282a36;color:#f8f8f2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#50fa7b;">[mfrw@archlinux</span><span> mfrw.github.io]$ ls
+</span><span style="color:#50fa7b;">config.toml</span><span> content public sass static templates
+</span><span style="color:#50fa7b;">[mfrw@archlinux</span><span> mfrw.github.io]$
+</span></code></pre>
+<p>The same repo after some fancy <a href="https://github.com/mfrw/dotfiles/blob/msft/starship.toml">PS1</a> configuration:</p>
+<pre data-lang="bash" style="background-color:#282a36;color:#f8f8f2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#50fa7b;">mfrw</span><span> in archlinux in </span><span style="color:#bd93f9;">~</span><span>/os/mfrw.github.io on  master:origin/master
+</span><span style="color:#50fa7b;">fsh</span><span> ❯ ls
+</span><span style="color:#50fa7b;">config.toml</span><span> content public sass static templates
+</span><span style="color:#50fa7b;">mfrw</span><span> in archlinux in </span><span style="color:#bd93f9;">~</span><span>/os/mfrw.github.io on  master:origin/master
+</span><span style="color:#50fa7b;">fsh</span><span> ❯
+</span></code></pre>
+<p>There are mulitple ways to configure the PS1 for your choice of the <code>$SHELL</code>, but I use multiple shells on the differnt machines I have. Some machines are configured to use the <a href="https://fishshell.com/">fish</a> some have <a href="https://zsh.sourceforge.io">zsh</a> and the remaining are <a href="https://www.gnu.org/software/bash/">bash</a>.
+I also, like to have a coherent experience across all my devices and the cognitive load of not writing and maintaining multiple PS1 scripts for differnt non-compatible shells, I use <a href="https://starship.rs/">startship</a>.
+startship is a fast, cross shell and infinitely customizeable prompt for any <code>$SHELL</code>.</p>
+<figure class="video_container" align=center>
+<video controls="true" width=70% source src="https://starship.rs/demo.mp4" type="video/mp4">
+</video>
+<figcaption>Starship Demo</figcaption>
+</figure>
+<p>A quick start for starship can be found <a href="https://starship.rs/#quick-install">here</a>. My starship configuration can be found <a href="https://github.com/mfrw/dotfiles/blob/msft/starship.toml">here</a>.
+Once we have configured the prompt to our hearts content, it becomes becomes hard to work on a branch which we are not supposed to. The visual clues make it difficult.</p>
+<h3 id="configure-aliases">Configure Aliases</h3>
+<p>Out of the box git comes with verbose subcommands to do stuff. While I am fan of a good naming convention, if we have a repeated workflow, typing the same tedious commands again and again might cause us to fat-finger and loose our rythm.
+Git can be configured extensively (like any other self respecting unix tool).
+Let's setup some aliases for the most common git sub commands.</p>
+<p>Here is my <code>.gitconfig</code> where I have created aliases for the most common commands I use with git.</p>
+<pre data-lang=".gitconfig" style="background-color:#282a36;color:#f8f8f2;" class="language-.gitconfig "><code class="language-.gitconfig" data-lang=".gitconfig"><span>[alias]
+</span><span>  </span><span style="color:#ffffff;">br </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">branch -vv </span><span style="color:#6272a4;">#display each branch &amp; the commit it is on
+</span><span>  </span><span style="color:#ffffff;">ch </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">status -uno </span><span style="color:#6272a4;">#only show changed files
+</span><span>  </span><span style="color:#ffffff;">ci </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">commit -s </span><span style="color:#6272a4;"># commit with --signoff
+</span><span>  </span><span style="color:#ffffff;">cl </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">clone
+</span><span>  </span><span style="color:#ffffff;">co </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">checkout
+</span><span>  </span><span style="color:#ffffff;">contributors </span><span style="color:#ff79c6;">= !</span><span style="color:#50fa7b;">git</span><span> log</span><span style="font-style:italic;color:#ffb86c;"> --format</span><span style="color:#ff79c6;">=</span><span>format:</span><span style="color:#f1fa8c;">&quot;%an&quot; </span><span style="color:#ff79c6;">| </span><span style="color:#50fa7b;">sort </span><span style="color:#ff79c6;">| </span><span style="color:#50fa7b;">uniq</span><span style="font-style:italic;color:#ffb86c;"> -c </span><span style="color:#ff79c6;">| </span><span style="color:#50fa7b;">sort</span><span style="font-style:italic;color:#ffb86c;"> -rn
+</span><span>  </span><span style="color:#ffffff;">d  </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">diff
+</span><span>  </span><span style="color:#ffffff;">dc </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">diff --cached </span><span style="color:#6272a4;"># diff with the index
+</span><span>  </span><span style="color:#ffffff;">dump </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">cat-file -p
+</span><span>  </span><span style="color:#ffffff;">fo </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">fetch origin
+</span><span>  </span><span style="color:#ffffff;">fa </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">fetch --all --tags
+</span><span>  </span><span style="color:#ffffff;">hist </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">log --pretty=</span><span style="color:#ff79c6;">format:</span><span style="color:#f1fa8c;">\&quot;</span><span style="color:#bd93f9;">%h %ad</span><span style="color:#f1fa8c;"> | </span><span style="color:#bd93f9;">%s%d</span><span style="color:#f1fa8c;"> [</span><span style="color:#bd93f9;">%an</span><span style="color:#f1fa8c;">]\&quot; --graph --date=short
+</span><span>  </span><span style="color:#ffffff;">lga </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">log --oneline --graph --all --decorate </span><span style="color:#6272a4;">#show a graphical lineage of all branches
+</span><span>  </span><span style="color:#ffffff;">lo </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">log --oneline
+</span><span>  </span><span style="color:#ffffff;">pfl </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">push --force-with-lease </span><span style="color:#6272a4;">#should rename it to &#39;please&#39;
+</span><span>  </span><span style="color:#ffffff;">pd </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">push --delete
+</span><span>  </span><span style="color:#ffffff;">pur </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">pull --rebase
+</span><span>  </span><span style="color:#ffffff;">recent </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">branch -a --sort=-committerdate
+</span><span>  </span><span style="color:#ffffff;">revert </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">revert -s
+</span><span>  </span><span style="color:#ffffff;">st </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">status
+</span><span>  </span><span style="color:#ffffff;">type </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">cat-file -t
+</span><span>  </span><span style="color:#ffffff;">unstage </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">reset HEAD --
+</span><span>  </span><span style="color:#ffffff;">rup </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">remote update --prune </span><span style="color:#6272a4;">#delete stale references and sync with remote
+</span></code></pre>
+<h3 id="miscilleanous">Miscilleanous</h3>
+<p>After the important configs are done, we do need some more optional configurations that can make our workflow smother.</p>
+<ul>
+<li>Configure command-line completion</li>
+<li>Add visual eye-candy</li>
+<li>Use some sort of readily avaible online cheat sheets</li>
+<li>Integration with <code>GitLab</code>/<code>GitHub</code> &amp; more tools.</li>
+</ul>
+<p>The <a href="https://github.com/git/git/tree/master/contrib">git/contrib</a> directory is also an amzing source of additional scripts that have been contributed by the conmmunity and reside in the git source tree.</p>
+<h4 id="completion">Completion</h4>
+<p>Configure commandline complete by sourcing the appropriate file for your shell from <a href="https://github.com/git/git/tree/master/contrib/completion">here</a>.
+Once completion is configured, it becomes very easy to <code>TAB</code> your way through <code>git</code>!, which is always pretty cool.</p>
+<h4 id="visual-eye-candy">Visual eye-candy</h4>
+<p>There are a couple of addon pagers that we can configure git with, to have support for side-by-side diffs.</p>
+<ul>
+<li>
+<p><a href="https://github.com/dandavison/delta">delta</a></p>
+</li>
+<li>
+<p><a href="https://github.com/so-fancy/diff-so-fancy">diff-so-fancy</a></p>
+</li>
+<li><h4 id="syntax-aware-diffs">Syntax aware diffs:</h4>
+</li>
+</ul>
+<figure class="picture_cont" align=center>
+<img width=70% source src="https://user-images.githubusercontent.com/52205/86275526-76792100-bba1-11ea-9e78-6be9baa80b29.png">
+</img>
+<figcaption>git-delta with syntax highligting (without side by side diff)</figcaption>
+</figure>
+<p>My <code>.gitconfig</code> for <code>delta</code> :</p>
+<pre data-lang=".gitconfig" style="background-color:#282a36;color:#f8f8f2;" class="language-.gitconfig "><code class="language-.gitconfig" data-lang=".gitconfig"><span>[core]
+</span><span>	</span><span style="color:#ffffff;">pager </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">less
+</span><span>
+</span><span>[pager]
+</span><span>        </span><span style="color:#ffffff;">diff </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">delta
+</span><span>        </span><span style="color:#ffffff;">log </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">delta
+</span><span>        </span><span style="color:#ffffff;">reflog </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">delta
+</span><span>        </span><span style="color:#ffffff;">show </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">delta
+</span><span>
+</span><span>[delta]
+</span><span>        </span><span style="color:#ffffff;">features </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">side-by-side linux-numbers
+</span><span>        </span><span style="color:#ffffff;">whitespace-error-style </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">22 reverse
+</span><span>        </span><span style="color:#ffffff;">navigate </span><span style="color:#ff79c6;">= </span><span style="color:#bd93f9;">true
+</span><span>
+</span><span>[delta </span><span style="color:#f1fa8c;">&quot;decorations&quot;</span><span>]
+</span><span>        </span><span style="color:#ffffff;">commit-decoration-style </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">bold yellow box ul
+</span><span>        </span><span style="color:#ffffff;">file-style </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">bold yellow ul
+</span><span>        </span><span style="color:#ffffff;">file-decoration-style </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">none
+</span><span>
+</span><span>[interactive]
+</span><span>        </span><span style="color:#ffffff;">diffFilter </span><span style="color:#ff79c6;">= </span><span style="color:#f1fa8c;">delta --color-only
+</span><span>
+</span></code></pre>
+<ul>
+<li><h4 id="side-by-side-diffs">Side-by-Side diffs:</h4>
+</li>
+</ul>
+<figure class="picture_cont" align=center>
+<img width=100% source src="https://user-images.githubusercontent.com/52205/87230973-412eb900-c381-11ea-8aec-cc200290bd1b.png">
+</img>
+<figcaption>git-delta with syntax highligting (with side by side diff)</figcaption>
+</figure>
+<h4 id="online-cheat-sheets">Online cheat sheets:</h4>
+<figure class="picture_cont" align=center>
+<img width=100% source src="https://imgs.xkcd.com/comics/tar.png">
+</img>
+<figcaption>Motivation to use cheat-sheet or help</figcaption>
+</figure>
+<p>A few cheat-sheets that i use regularly for working with <code>git</code> (or anything for that matter on the terminal)</p>
+<ul>
+<li><a href="https://github.com/tldr-pages/tldr">tldr</a>: Collaborative cheatsheets for console commands.</li>
+<li><a href="https://github.com/cheat/cheat">cheat</a>: Allows you to create and view interactive cheatsheets on the command-line.</li>
+<li><a href="https://github.com/git-tips/tips">git-tips/tip</a>: Most commonly used git tips and tricks.</li>
+<li><a href="https://github.com/k88hudson/git-flight-rules">k88hudson/git-flight-rules</a>: Flight rules for git.</li>
+</ul>
+<h4 id="integration-with-gitlab-github-more-tools">Integration with GitLab/GitHub &amp; more tools:</h4>
+<ul>
+<li><a href="https://github.com/cli/cli">github/cli</a>: GitHubs official command line tool</li>
+<li><a href="https://github.com/github/hub">github/hub</a>: A command-line tool that makes git easier to use with GitHub.</li>
+<li><a href="https://github.com/profclems/glab">profclems/glab</a>: An open-source GitLab command line tool briging GitLab's cool features to your command-line</li>
+<li><a href="https://github.com/tj/git-extras">tj/git-extras</a>: GIT utilities -- repo summary, repl, changelog population, author commit percentages and more</li>
+<li><a href="https://github.com/tpope/vim-fugitive">tpope/vim-fugitve</a>: A Git wrapper so awesome, it should be illegal</li>
+<li><a href="https://github.com/magit/magit">magit/magit</a>: It's Magit! A Git porcelain inside Emacs.</li>
+</ul>
+<p>Thank you, if you know of anything else that has helped you to improve your workflow or have any comments or suggestions, please feel free to reach out on twitter (<a href="https://twitter.com/vimfrw">@vimfrw</a>).</p>
+
+</article>
+
+
+      
+      <footer role="contentinfo">
+        <hr />
+        
+        <nav style="margin-bottom:1rem;" role="navigation">
+          
+            <a href="http://mfrw.github.io/">Posts</a>
+            
+              <span>&middot;</span>
+            
+          
+            <a href="http://mfrw.github.io/talks">Talks</a>
+            
+              <span>&middot;</span>
+            
+          
+            <a href="http://mfrw.github.io/projects">Projects</a>
+            
+              <span>&middot;</span>
+            
+          
+            <a href="http://mfrw.github.io/about">About</a>
+            
+              <span>&middot;</span>
+            
+          
+            <a href="http://mfrw.github.io/atom.xml">RSS</a>
+            
+          
+        </nav>
+        
+      </footer>
+      
+
+    </main>
+    
+    
+  </body>
+</html>
+

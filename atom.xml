@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Imposter!</title>
+	<subtitle>Notes from someone pretending!</subtitle>
+	<link href="http://mfrw.github.io/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="http://mfrw.github.io"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-01-17T00:00:00+00:00</updated>
+	<id>http://mfrw.github.io/atom.xml</id>
+	<entry xml:lang="en">
+		<title>eBPF 101</title>
+		<published>2022-01-17T00:00:00+00:00</published>
+		<updated>2022-01-17T00:00:00+00:00</updated>
+		<link href="http://mfrw.github.io/ebpf-101/" type="text/html"/>
+		<id>http://mfrw.github.io/ebpf-101/</id>
+		<content type="html">&lt;p&gt;I recently gave a talk at &lt;a href=&quot;https:&#x2F;&#x2F;lca-kernel.ozlabs.org&#x2F;&quot;&gt;Linux Conf AU 2022&lt;&#x2F;a&gt; and the video is up.&lt;&#x2F;p&gt;
+&lt;figure class=&quot;video_container&quot; align=center&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;n6SdBmgLFmA&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;figcaption&gt;eBPF 101&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>That&#x27;s a rotate!</title>
+		<published>2021-11-29T00:00:00+00:00</published>
+		<updated>2021-11-29T00:00:00+00:00</updated>
+		<link href="http://mfrw.github.io/thats-a-rotate/" type="text/html"/>
+		<id>http://mfrw.github.io/thats-a-rotate/</id>
+		<content type="html">&lt;figure class=&quot;video_container&quot; align=center&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;UZmeDQL4LaE&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;figcaption&gt;That&#x27;s a rotate!&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;This blog post is a acknowledgment of a talk given by Sean Parent which turned my life upside-down and probably made me what I am. Now you would say what that might be, yep, I still am an imposter, but atleast now I know what to fake -- and this is -- thanks to Sean &amp;amp; the talk.
+Enough about me, so what is the talk!&lt;&#x2F;p&gt;
+&lt;p&gt;In 2013 &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;seanparent&quot;&gt;Sean Parent&lt;&#x2F;a&gt; gave a talk at GoingNative, his talk was title &lt;code&gt;C++ Seasoning&lt;&#x2F;code&gt; which was about some tips about writing clean &amp;amp; efficient code. Among other things, in this talk he stresses too much on not using &lt;code&gt;raw-loops&lt;&#x2F;code&gt; and goes on to talk about how one should give a carefull read of the std library in &lt;code&gt;C++&lt;&#x2F;code&gt;. In this talk, he used the word &lt;code&gt;&amp;quot;rotate&amp;quot;&lt;&#x2F;code&gt; more than 20 times. He was refering to a peice of code which could be very easily implemented by a straightforward use &lt;code&gt;std::rotate&lt;&#x2F;code&gt;. He emphatically said multiple times &lt;code&gt;&amp;quot;That&#x27;s a rotate!&amp;quot;&lt;&#x2F;code&gt;. This talk also gave birth to a twitter hashtag &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;search?q=%23thatsarotate&amp;amp;src=recent_search_click&quot;&gt;&lt;code&gt;#thatsarotate&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;. Although, he only talks about rotate in this specific case, what he wanted to imply in my opinion, that one should be aware of the functions in the std library and one should always strive for readability. The hashtag was a sort of meme fest (long before when memes were a thing) people started pouring in with their &lt;code&gt;#thatsarotate&lt;&#x2F;code&gt; moments in life.&lt;&#x2F;p&gt;
+&lt;p&gt;Ofcourse I would highly recommend the whole talk:&lt;&#x2F;p&gt;
+&lt;figure class=&quot;video_container&quot; align=center&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;qH6sSOr-yk8&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;figcaption&gt;The full talk&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;If you want to know the back story of the comment where he mentions &lt;code&gt;nobody knows what rotate does&lt;&#x2F;code&gt;, here is the inside story:&lt;&#x2F;p&gt;
+&lt;figure class=&quot;video_container&quot; align=center&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;IzNtM038JuI?start=1715&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;figcaption&gt;Back story of &#x27;nobody knew what a rotate does&#x27; [28:35]&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;And for me, my &lt;code&gt;#thatsarotate&lt;&#x2F;code&gt; moment in computer science was this talk.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>RSS! Ohh my..</title>
+		<published>2021-11-27T00:00:00+00:00</published>
+		<updated>2021-11-27T00:00:00+00:00</updated>
+		<link href="http://mfrw.github.io/rss-oh-my/" type="text/html"/>
+		<id>http://mfrw.github.io/rss-oh-my/</id>
+		<content type="html">&lt;p&gt;Getting to the world of RSS and getting on top of my blog reading game is just insane. I never had used an RSS reader before but now using one for just a few hours, I am starting to realize what I was missing in life. I like to think of myself as someone, who would read a lot (not sure if i can apply all of that), but for sure I try to read a lot. Right now I am trying to slurp the &lt;code&gt;nix&lt;&#x2F;code&gt; manual. It just feels like something I can really use with whatever I am doing currently.&lt;&#x2F;p&gt;
+&lt;p&gt;Hopefully a blog on nix is in order!&lt;&#x2F;p&gt;
+&lt;p&gt;Thats it for today though.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Copying files across git-branches</title>
+		<published>2021-11-25T00:00:00+00:00</published>
+		<updated>2021-11-25T00:00:00+00:00</updated>
+		<link href="http://mfrw.github.io/git-snag/" type="text/html"/>
+		<id>http://mfrw.github.io/git-snag/</id>
+		<content type="html">&lt;p&gt;While working on a repo with several branches, sometimes the need arises to get a file from another branch.
+After checking out the internet for options I saw some examples in &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;junegunn&#x2F;fzf&#x2F;wiki&#x2F;Examples-(fish)#git&quot;&gt;junegunn&#x2F;fzf&lt;&#x2F;a&gt; and a particular function &lt;code&gt;snag&lt;&#x2F;code&gt; looked interesting.&lt;&#x2F;p&gt;
+&lt;p&gt;I modified that function slightly to suit my needs and thought let me quickly pen it down here; lest i forget it!&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;fish&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-fish &quot;&gt;&lt;code class=&quot;language-fish&quot; data-lang=&quot;fish&quot;&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;snag &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;--description &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;#39;Pick desired files from a chosen branch and checkout in &amp;#39;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# use fzf to choose source branch to snag a file FROM
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;set &lt;&#x2F;span&gt;&lt;span&gt;branch (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;git &lt;&#x2F;span&gt;&lt;span&gt;for-each-ref &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;--format=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;#39;%(refname:short)&amp;#39; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;fzf &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;--prompt=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;quot;Search for a Branch:&amp;gt; &amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;--multi=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;1 &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;--height &lt;&#x2F;span&gt;&lt;span&gt;20% &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;--layout=&lt;&#x2F;span&gt;&lt;span&gt;reverse &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;--border&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# avoid doing work if branch isn&amp;#39;t set
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;test &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;-n &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;$branch&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# use fzf to choose files that differ from current branch
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;set &lt;&#x2F;span&gt;&lt;span&gt;file (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;git &lt;&#x2F;span&gt;&lt;span&gt;diff &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;--name-only &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;$branch &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;fzf &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;--prompt=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;quot;Search for a file to checkout at CWD:&amp;gt; &amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;--multi=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;1 &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;--height &lt;&#x2F;span&gt;&lt;span&gt;20% &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;--layout=&lt;&#x2F;span&gt;&lt;span&gt;reverse &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;--border&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;end
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# Stop the operation, if there is already a file with the same name in $CWD.
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;test &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;-e &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;basename &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;$file&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;$file&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;: Already exists and this operation will overwirite the existing file!&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;quot;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;quot;If you still want to continue, run the below command:&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;set &lt;&#x2F;span&gt;&lt;span&gt;bfile (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;basename &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;$file&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;quot;git show &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;$branch&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;$file&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt; &amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;$bfile&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;end
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# avoid checking out branch if files aren&amp;#39;t specified
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;test &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;-n &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;$file&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;git &lt;&#x2F;span&gt;&lt;span&gt;show &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;$branch&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;$file &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;basename &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;$file&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;end
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;end
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This function is a little paranoid, where if it finds a file with the same name that you wish to checkout, aborts the operation and gives you the command if you really want to do it.&lt;&#x2F;p&gt;
+&lt;p&gt;The pre-reqs for this function to work are:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;fishshell.com&#x2F;&quot;&gt;fish&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;git-scm.com&#x2F;&quot;&gt;git&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;junegunn&#x2F;fzf&quot;&gt;fzf&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;figure class=&quot;picture_cont&quot; align=center&gt;
+&lt;img width=45% source src=&quot;https:&#x2F;&#x2F;imgs.xkcd.com&#x2F;comics&#x2F;git_commit.png&quot;&gt;
+&lt;&#x2F;img&gt;
+&lt;figcaption&gt;As always a rando xkcd ...&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;Thats it for today!&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Playing with RPMS!</title>
+		<published>2021-11-23T00:00:00+00:00</published>
+		<updated>2021-11-23T00:00:00+00:00</updated>
+		<link href="http://mfrw.github.io/rpm/" type="text/html"/>
+		<id>http://mfrw.github.io/rpm/</id>
+		<content type="html">&lt;p&gt;I have been playing with RPM a lot lately. Do I like them ? Do I have fun while packaging stuff? Well in all honesty, nope, not at all, but I am learning new tricks to get more out of the RPM system.&lt;&#x2F;p&gt;
+&lt;p&gt;Recently I have been involved with getting some information from specs files and also from the generated RPMS.&lt;&#x2F;p&gt;
+&lt;p&gt;So, here, just for my own self, let me try to pen down a few tricks that i like to use with RPM.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;extract-all-the-packages-that-are-provided-by-a-given-rpm&quot;&gt;Extract all the packages that are provided by a given RPM:&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;rpm&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt; -qp --qf &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;#39;[%{N} \\n]&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt; --nosignature&lt;&#x2F;span&gt;&lt;span&gt; some.rpm
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The above command if broken down, if provided a &lt;code&gt;--query-format&#x2F;--qf&lt;&#x2F;code&gt; which return whatever you ask from the RPM. In the above command, my question is simple, what packages are provided by the given RPM, without the &lt;code&gt;version&#x2F;distro-tag&#x2F;&lt;&#x2F;code&gt; or any other BS.&lt;&#x2F;p&gt;
+&lt;p&gt;We could have asked the same question to a &lt;code&gt;.spec&lt;&#x2F;code&gt; file as well&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;rpmspec&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt; -q --queryformat &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;#39;[%{N} \\n]&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; some.spec
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To get all possible values of what can be given in the &lt;code&gt;--queryformat&lt;&#x2F;code&gt;, well, ask &lt;code&gt;rpm&#x2F;rpmspec&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;rpmspec&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt; --querytags
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Most of the values there are self-explainatory!&lt;&#x2F;p&gt;
+&lt;figure class=&quot;picture_cont&quot; align=center&gt;
+&lt;img width=45% source src=&quot;https:&#x2F;&#x2F;imgs.xkcd.com&#x2F;comics&#x2F;universal_install_script.png&quot;&gt;
+&lt;&#x2F;img&gt;
+&lt;figcaption&gt;A Rando XKCD to express my...&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;Thats it for today!&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Oh Git!</title>
+		<published>2021-11-19T00:00:00+00:00</published>
+		<updated>2021-11-19T00:00:00+00:00</updated>
+		<link href="http://mfrw.github.io/oh-git/" type="text/html"/>
+		<id>http://mfrw.github.io/oh-git/</id>
+		<content type="html">&lt;p&gt;Git is a powertool which most folks in the software industry use.&lt;&#x2F;p&gt;
+&lt;figure class=&quot;picture_cont&quot; align=center&gt;
+&lt;img width=33% source src=&quot;https:&#x2F;&#x2F;imgs.xkcd.com&#x2F;comics&#x2F;git.png&quot;&gt;
+&lt;&#x2F;img&gt;
+&lt;figcaption&gt;My view of Git&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;It&#x27;s the kind of tool, where the users can be classified into:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Basic&lt;&#x2F;strong&gt;: are comfortable with &lt;code&gt;add&#x2F;commit&#x2F;push&#x2F;pull&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Intermediate&lt;&#x2F;strong&gt;: are comfortable with &lt;code&gt;rebases&#x2F;cherry-picking&#x2F;worktree&#x2F;filter-branch&lt;&#x2F;code&gt; etc etc.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Advanced&lt;&#x2F;strong&gt;: are okay with doing an &lt;a href=&quot;https:&#x2F;&#x2F;lore.kernel.org&#x2F;all&#x2F;CA+55aFxX3odNLBt1L6iAPGybekioqaW3SREmXywd_jnz_tDBeQ@mail.gmail.com&#x2F;&quot;&gt;octopus merge&lt;&#x2F;a&gt; with more than 8 source branches.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;For me personally, I belong to the bucket which I havent defined (between Basic &amp;amp; Intermediate).  This blog post is a &lt;code&gt;quality of life improvement&lt;&#x2F;code&gt; to help with &lt;code&gt;git&lt;&#x2F;code&gt; and help you improving your workflow.&lt;&#x2F;p&gt;
+&lt;p&gt;Let&#x27;s start with the absolute basics of quality of life imporovements&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;absolute-basics&quot;&gt;Absolute Basics:&lt;&#x2F;h2&gt;
+&lt;p&gt;A few quality of life improvements before we move ahead on our journey to improve our git workflow.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Configure Prompt&lt;&#x2F;li&gt;
+&lt;li&gt;Configure Aliases&lt;&#x2F;li&gt;
+&lt;li&gt;Miscilleanous&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;configuring-the-prompt&quot;&gt;Configuring the Prompt:&lt;&#x2F;h3&gt;
+&lt;p&gt;Out of the box the command line git interface is bare. To get a little more context a good idea is to configure the &lt;a href=&quot;https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;title&#x2F;Bash&#x2F;Prompt_customization#Prompts&quot;&gt;PS1&lt;&#x2F;a&gt; of your terminal.&lt;&#x2F;p&gt;
+&lt;p&gt;A git repo on the terminal without a custom PS1:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;[mfrw@archlinux&lt;&#x2F;span&gt;&lt;span&gt; mfrw.github.io]$ ls
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;config.toml&lt;&#x2F;span&gt;&lt;span&gt; content public sass static templates
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;[mfrw@archlinux&lt;&#x2F;span&gt;&lt;span&gt; mfrw.github.io]$
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The same repo after some fancy &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mfrw&#x2F;dotfiles&#x2F;blob&#x2F;msft&#x2F;starship.toml&quot;&gt;PS1&lt;&#x2F;a&gt; configuration:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;mfrw&lt;&#x2F;span&gt;&lt;span&gt; in archlinux in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;os&#x2F;mfrw.github.io on  master:origin&#x2F;master
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;fsh&lt;&#x2F;span&gt;&lt;span&gt; ❯ ls
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;config.toml&lt;&#x2F;span&gt;&lt;span&gt; content public sass static templates
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;mfrw&lt;&#x2F;span&gt;&lt;span&gt; in archlinux in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;os&#x2F;mfrw.github.io on  master:origin&#x2F;master
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;fsh&lt;&#x2F;span&gt;&lt;span&gt; ❯
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;There are mulitple ways to configure the PS1 for your choice of the &lt;code&gt;$SHELL&lt;&#x2F;code&gt;, but I use multiple shells on the differnt machines I have. Some machines are configured to use the &lt;a href=&quot;https:&#x2F;&#x2F;fishshell.com&#x2F;&quot;&gt;fish&lt;&#x2F;a&gt; some have &lt;a href=&quot;https:&#x2F;&#x2F;zsh.sourceforge.io&quot;&gt;zsh&lt;&#x2F;a&gt; and the remaining are &lt;a href=&quot;https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;bash&#x2F;&quot;&gt;bash&lt;&#x2F;a&gt;.
+I also, like to have a coherent experience across all my devices and the cognitive load of not writing and maintaining multiple PS1 scripts for differnt non-compatible shells, I use &lt;a href=&quot;https:&#x2F;&#x2F;starship.rs&#x2F;&quot;&gt;startship&lt;&#x2F;a&gt;.
+startship is a fast, cross shell and infinitely customizeable prompt for any &lt;code&gt;$SHELL&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;figure class=&quot;video_container&quot; align=center&gt;
+&lt;video controls=&quot;true&quot; width=70% source src=&quot;https:&#x2F;&#x2F;starship.rs&#x2F;demo.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+&lt;&#x2F;video&gt;
+&lt;figcaption&gt;Starship Demo&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;A quick start for starship can be found &lt;a href=&quot;https:&#x2F;&#x2F;starship.rs&#x2F;#quick-install&quot;&gt;here&lt;&#x2F;a&gt;. My starship configuration can be found &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mfrw&#x2F;dotfiles&#x2F;blob&#x2F;msft&#x2F;starship.toml&quot;&gt;here&lt;&#x2F;a&gt;.
+Once we have configured the prompt to our hearts content, it becomes becomes hard to work on a branch which we are not supposed to. The visual clues make it difficult.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;configure-aliases&quot;&gt;Configure Aliases&lt;&#x2F;h3&gt;
+&lt;p&gt;Out of the box git comes with verbose subcommands to do stuff. While I am fan of a good naming convention, if we have a repeated workflow, typing the same tedious commands again and again might cause us to fat-finger and loose our rythm.
+Git can be configured extensively (like any other self respecting unix tool).
+Let&#x27;s setup some aliases for the most common git sub commands.&lt;&#x2F;p&gt;
+&lt;p&gt;Here is my &lt;code&gt;.gitconfig&lt;&#x2F;code&gt; where I have created aliases for the most common commands I use with git.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;.gitconfig&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-.gitconfig &quot;&gt;&lt;code class=&quot;language-.gitconfig&quot; data-lang=&quot;.gitconfig&quot;&gt;&lt;span&gt;[alias]
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;br &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;branch -vv &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;#display each branch &amp;amp; the commit it is on
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;ch &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;status -uno &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;#only show changed files
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;ci &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;commit -s &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# commit with --signoff
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;cl &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;clone
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;co &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;checkout
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;contributors &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= !&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; log&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt; --format&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;format:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;quot;%an&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;sort &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;uniq&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt; -c &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;sort&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt; -rn
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;d  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;diff
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;dc &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;diff --cached &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# diff with the index
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;dump &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;cat-file -p
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;fo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;fetch origin
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;fa &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;fetch --all --tags
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;hist &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;log --pretty=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;format:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;\&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;%h %ad&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt; | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;%s%d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt; [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;%an&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;]\&amp;quot; --graph --date=short
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;lga &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;log --oneline --graph --all --decorate &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;#show a graphical lineage of all branches
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;lo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;log --oneline
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;pfl &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;push --force-with-lease &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;#should rename it to &amp;#39;please&amp;#39;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;pd &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;push --delete
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;pur &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;pull --rebase
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;recent &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;branch -a --sort=-committerdate
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;revert &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;revert -s
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;st &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;status
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;type &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;cat-file -t
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;unstage &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;reset HEAD --
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;rup &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;remote update --prune &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;#delete stale references and sync with remote
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;miscilleanous&quot;&gt;Miscilleanous&lt;&#x2F;h3&gt;
+&lt;p&gt;After the important configs are done, we do need some more optional configurations that can make our workflow smother.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Configure command-line completion&lt;&#x2F;li&gt;
+&lt;li&gt;Add visual eye-candy&lt;&#x2F;li&gt;
+&lt;li&gt;Use some sort of readily avaible online cheat sheets&lt;&#x2F;li&gt;
+&lt;li&gt;Integration with &lt;code&gt;GitLab&lt;&#x2F;code&gt;&#x2F;&lt;code&gt;GitHub&lt;&#x2F;code&gt; &amp;amp; more tools.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;git&#x2F;git&#x2F;tree&#x2F;master&#x2F;contrib&quot;&gt;git&#x2F;contrib&lt;&#x2F;a&gt; directory is also an amzing source of additional scripts that have been contributed by the conmmunity and reside in the git source tree.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;completion&quot;&gt;Completion&lt;&#x2F;h4&gt;
+&lt;p&gt;Configure commandline complete by sourcing the appropriate file for your shell from &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;git&#x2F;git&#x2F;tree&#x2F;master&#x2F;contrib&#x2F;completion&quot;&gt;here&lt;&#x2F;a&gt;.
+Once completion is configured, it becomes very easy to &lt;code&gt;TAB&lt;&#x2F;code&gt; your way through &lt;code&gt;git&lt;&#x2F;code&gt;!, which is always pretty cool.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;visual-eye-candy&quot;&gt;Visual eye-candy&lt;&#x2F;h4&gt;
+&lt;p&gt;There are a couple of addon pagers that we can configure git with, to have support for side-by-side diffs.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dandavison&#x2F;delta&quot;&gt;delta&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;so-fancy&#x2F;diff-so-fancy&quot;&gt;diff-so-fancy&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;h4 id=&quot;syntax-aware-diffs&quot;&gt;Syntax aware diffs:&lt;&#x2F;h4&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;figure class=&quot;picture_cont&quot; align=center&gt;
+&lt;img width=70% source src=&quot;https:&#x2F;&#x2F;user-images.githubusercontent.com&#x2F;52205&#x2F;86275526-76792100-bba1-11ea-9e78-6be9baa80b29.png&quot;&gt;
+&lt;&#x2F;img&gt;
+&lt;figcaption&gt;git-delta with syntax highligting (without side by side diff)&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;My &lt;code&gt;.gitconfig&lt;&#x2F;code&gt; for &lt;code&gt;delta&lt;&#x2F;code&gt; :&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;.gitconfig&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-.gitconfig &quot;&gt;&lt;code class=&quot;language-.gitconfig&quot; data-lang=&quot;.gitconfig&quot;&gt;&lt;span&gt;[core]
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;pager &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;less
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;[pager]
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;diff &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;delta
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;log &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;delta
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;reflog &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;delta
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;show &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;delta
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;[delta]
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;features &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;side-by-side linux-numbers
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;whitespace-error-style &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;22 reverse
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;navigate &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;true
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;[delta &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;quot;decorations&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;]
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;commit-decoration-style &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;bold yellow box ul
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;file-style &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;bold yellow ul
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;file-decoration-style &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;none
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;[interactive]
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;diffFilter &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;delta --color-only
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h4 id=&quot;side-by-side-diffs&quot;&gt;Side-by-Side diffs:&lt;&#x2F;h4&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;figure class=&quot;picture_cont&quot; align=center&gt;
+&lt;img width=100% source src=&quot;https:&#x2F;&#x2F;user-images.githubusercontent.com&#x2F;52205&#x2F;87230973-412eb900-c381-11ea-8aec-cc200290bd1b.png&quot;&gt;
+&lt;&#x2F;img&gt;
+&lt;figcaption&gt;git-delta with syntax highligting (with side by side diff)&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;h4 id=&quot;online-cheat-sheets&quot;&gt;Online cheat sheets:&lt;&#x2F;h4&gt;
+&lt;figure class=&quot;picture_cont&quot; align=center&gt;
+&lt;img width=100% source src=&quot;https:&#x2F;&#x2F;imgs.xkcd.com&#x2F;comics&#x2F;tar.png&quot;&gt;
+&lt;&#x2F;img&gt;
+&lt;figcaption&gt;Motivation to use cheat-sheet or help&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;A few cheat-sheets that i use regularly for working with &lt;code&gt;git&lt;&#x2F;code&gt; (or anything for that matter on the terminal)&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tldr-pages&#x2F;tldr&quot;&gt;tldr&lt;&#x2F;a&gt;: Collaborative cheatsheets for console commands.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cheat&#x2F;cheat&quot;&gt;cheat&lt;&#x2F;a&gt;: Allows you to create and view interactive cheatsheets on the command-line.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;git-tips&#x2F;tips&quot;&gt;git-tips&#x2F;tip&lt;&#x2F;a&gt;: Most commonly used git tips and tricks.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;k88hudson&#x2F;git-flight-rules&quot;&gt;k88hudson&#x2F;git-flight-rules&lt;&#x2F;a&gt;: Flight rules for git.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;integration-with-gitlab-github-more-tools&quot;&gt;Integration with GitLab&#x2F;GitHub &amp;amp; more tools:&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cli&#x2F;cli&quot;&gt;github&#x2F;cli&lt;&#x2F;a&gt;: GitHubs official command line tool&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;github&#x2F;hub&quot;&gt;github&#x2F;hub&lt;&#x2F;a&gt;: A command-line tool that makes git easier to use with GitHub.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;profclems&#x2F;glab&quot;&gt;profclems&#x2F;glab&lt;&#x2F;a&gt;: An open-source GitLab command line tool briging GitLab&#x27;s cool features to your command-line&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tj&#x2F;git-extras&quot;&gt;tj&#x2F;git-extras&lt;&#x2F;a&gt;: GIT utilities -- repo summary, repl, changelog population, author commit percentages and more&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tpope&#x2F;vim-fugitive&quot;&gt;tpope&#x2F;vim-fugitve&lt;&#x2F;a&gt;: A Git wrapper so awesome, it should be illegal&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;magit&#x2F;magit&quot;&gt;magit&#x2F;magit&lt;&#x2F;a&gt;: It&#x27;s Magit! A Git porcelain inside Emacs.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Thank you, if you know of anything else that has helped you to improve your workflow or have any comments or suggestions, please feel free to reach out on twitter (&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;vimfrw&quot;&gt;@vimfrw&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Starting my blog again</title>
+		<published>2021-11-17T00:00:00+00:00</published>
+		<updated>2021-11-17T00:00:00+00:00</updated>
+		<link href="http://mfrw.github.io/epoch/" type="text/html"/>
+		<id>http://mfrw.github.io/epoch/</id>
+		<content type="html">&lt;p&gt;After repeated feedback from mentors and friends, I have finally started to write again!
+After a few (failed) attempts to resurruct my old blog, I finally gave up and started looking for a distraction free way of putting my thoughts in a coherent manner. I am taking a liking in the simplicity of static site generators. Hopefully, I, will now write more -- after I settle on what &amp;amp; where I host my blog.&lt;&#x2F;p&gt;
+&lt;p&gt;Current ideas:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;gohugo.io&quot;&gt;hugo&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;getzola.org&quot;&gt;zola&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;One is written in go &amp;amp; the other is in rust. Given my love for both the languages, its going to be hard to choose one. I am biased towards the simplicity of zola.&lt;&#x2F;p&gt;
+&lt;p&gt;In anycase, enough of me blabering about what will I do and what not, let me get back to work and host a blog!&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;edit-i-finally-went-with-zola-if-anyone-cares&quot;&gt;Edit: I finally went with &lt;code&gt;zola&lt;&#x2F;code&gt;, if anyone cares :)&lt;&#x2F;h3&gt;
+&lt;p&gt;The reason was pretty arbitary, but then again, &lt;code&gt;zola&lt;&#x2F;code&gt; is written in rust, so that&#x27;s that!&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
